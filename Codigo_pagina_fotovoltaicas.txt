@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorador Interactivo de Paneles Fotovoltaicos</title>
+    <meta name="description" content="Descubre todo sobre paneles fotovoltaicos, su funcionamiento, tipos, rendimiento, aplicaciones, impacto económico y futuro. ¡Tu guía interactiva de energía solar!">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Application Structure Plan: The SPA will use a thematic, multi-section layout navigated by a fixed top navigation bar. Key sections will include:
@@ -45,6 +46,8 @@
         .modal-content { background-color: #fefefe; margin: 10% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 700px; border-radius: 0.5rem; position: relative; }
         .close-button { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
         .close-button:hover, .close-button:focus { color: black; text-decoration: none; cursor: pointer; }
+        .image-container { display: flex; justify-content: center; align-items: center; margin-bottom: 1.5rem; }
+        .image-container img { max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
@@ -92,6 +95,9 @@
         <section id="inicio" class="content-section active">
             <div class="bg-white shadow-xl rounded-lg p-6 mb-8">
                 <h2 class="text-3xl font-bold text-sky-700 mb-4">Bienvenido al Explorador de Energía Solar Fotovoltaica</h2>
+                <div class="image-container">
+                    <img src="https://placehold.co/600x350/a7f3d0/065f46?text=Paneles+Solares+en+Tejado" alt="Paneles solares en un tejado">
+                </div>
                 <p class="text-lg mb-4">La energía solar fotovoltaica (FV) es una tecnología clave en la transición hacia un futuro energético más limpio y sostenible. Convierte la luz solar directamente en electricidad, ofreciendo una alternativa crucial a los combustibles fósiles.</p>
                 <p class="mb-4">Este explorador interactivo te guiará a través de los aspectos fundamentales de los paneles fotovoltaicos, desde su funcionamiento básico y los diferentes tipos existentes, hasta su impacto económico y ambiental, y las emocionantes innovaciones que están por venir. Utiliza la navegación para explorar cada sección y descubrir cómo la energía solar está transformando nuestro mundo.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
@@ -127,6 +133,9 @@
                         <li><strong class="text-amber-500">Creación de Corriente:</strong> Los electrones liberados fluyen, generando una corriente eléctrica (Corriente Continua - CC).</li>
                         <li><strong class="text-amber-500">Conversión a CA:</strong> Un inversor transforma la CC en Corriente Alterna (CA), utilizable en hogares y la red.</li>
                     </ol>
+                </div>
+                <div class="image-container">
+                    <img src="https://placehold.co/600x300/c7d2fe/3730a3?text=Diagrama+Efecto+Fotovoltaico" alt="Diagrama del efecto fotovoltaico">
                 </div>
 
                 <div class="my-6 p-4 bg-sky-50 rounded-lg shadow">
@@ -206,7 +215,7 @@
                 </div>
 
                 <div id="panelTypesContainer" class="space-y-6">
-                </div>
+                    </div>
                 <p class="mt-6 text-sm italic text-slate-500">La elección del panel solar implica un equilibrio entre eficiencia, costo y durabilidad. No hay una solución única "superior"; la opción óptima depende de las prioridades de cada proyecto.</p>
             </div>
         </section>
@@ -231,7 +240,9 @@
             <div class="bg-white shadow-xl rounded-lg p-6 mb-8">
                 <h2 class="text-3xl font-bold text-sky-700 mb-4">Factores que Influyen en el Rendimiento</h2>
                 <p class="text-lg mb-4">La eficiencia de un panel solar no solo depende de su tecnología, sino también de factores ambientales y de diseño. Comprenderlos es clave para optimizar la producción de energía.</p>
-
+                <div class="image-container">
+                    <img src="https://placehold.co/600x350/a7f3d0/065f46?text=Factores+de+Rendimiento+Solar" alt="Ilustración de factores de rendimiento solar">
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="card bg-slate-50 p-5 rounded-lg shadow">
                         <h3 class="text-xl font-semibold text-sky-600 mb-2">☀️ Irradiación Solar</h3>
@@ -276,6 +287,9 @@
 
                     <div id="tradicionales" class="app-tab-content mt-6">
                         <h3 class="text-2xl font-semibold text-sky-600 mb-3">Residencial, Comercial e Industrial</h3>
+                        <div class="image-container">
+                            <img src="https://placehold.co/600x350/d1e7dd/0f5132?text=Solar+Residencial" alt="Paneles solares en una casa">
+                        </div>
                         <p class="mb-4">En <strong class="text-amber-600">hogares</strong>, para autoconsumo (luces, electrodomésticos, climatización). En <strong class="text-amber-600">empresas e industrias</strong>, para reducir costos operativos en naves, procesamiento de alimentos, agricultura (riego, iluminación), etc.</p>
                         <h4 class="text-xl font-semibold text-sky-600 mt-4 mb-2">Sistemas Aislados (Off-Grid)</h4>
                         <p class="mb-1">Autosuficiencia energética total, cruciales para zonas rurales, remotas, granjas, caravanas. Requieren baterías.</p>
@@ -284,6 +298,9 @@
 
                     <div id="granEscala" class="app-tab-content mt-6" style="display:none;">
                         <h3 class="text-2xl font-semibold text-sky-600 mb-3">Plantas Solares a Gran Escala</h3>
+                        <div class="image-container">
+                            <img src="https://placehold.co/600x350/dbeafe/1e40af?text=Granja+Solar" alt="Granja solar a gran escala">
+                        </div>
                         <p class="mb-4">Grandes "granjas solares" que generan enormes cantidades de electricidad para la red, contribuyendo a la autosuficiencia energética y reducción de emisiones. China e India lideran este desarrollo.</p>
                         <div class="chart-container mx-auto h-72 md:h-96">
                             <canvas id="largeScalePlantsChart"></canvas>
@@ -294,6 +311,9 @@
 
                     <div id="innovadoras" class="app-tab-content mt-6" style="display:none;">
                         <h3 class="text-2xl font-semibold text-sky-600 mb-3">Aplicaciones Innovadoras</h3>
+                        <div class="image-container">
+                            <img src="https://placehold.co/600x350/fef3c7/92400e?text=BIPV+o+Agrivoltaica" alt="Imagen de aplicación solar innovadora">
+                        </div>
                         <p class="mb-4">La industria solar busca constantemente integrar la tecnología en nuestra vida e infraestructuras de formas novedosas:</p>
                         <ul class="list-disc list-inside space-y-3">
                             <li><strong>Integración en Edificios (BIPV):</strong> Tejas solares, fachadas, ventanas fotovoltaicas. Generan energía y son parte del edificio.</li>
@@ -313,7 +333,9 @@
             <div class="bg-white shadow-xl rounded-lg p-6 mb-8">
                 <h2 class="text-3xl font-bold text-sky-700 mb-4">Impacto Ambiental y Sostenibilidad</h2>
                 <p class="text-lg mb-4">Aunque es una energía limpia en su operación, es vital analizar el ciclo de vida completo de los paneles FV, desde su fabricación hasta su reciclaje.</p>
-
+                <div class="image-container">
+                    <img src="https://placehold.co/600x350/bfdbfe/1d4ed8?text=Reciclaje+de+Paneles+Solares" alt="Ilustración de reciclaje de paneles solares">
+                </div>
                 <div class="mb-6">
                     <h3 class="text-xl font-semibold text-sky-600 mb-2 text-center">Huella de Carbono Comparativa (g CO2eq/kWh)</h3>
                     <div class="chart-container mx-auto h-64 md:h-80">
@@ -349,7 +371,9 @@
             <div class="bg-white shadow-xl rounded-lg p-6 mb-8">
                 <h2 class="text-3xl font-bold text-sky-700 mb-4">Aspectos Económicos y Rentabilidad</h2>
                 <p class="text-lg mb-4">La viabilidad económica de la energía solar ha mejorado drásticamente, convirtiéndola en una inversión atractiva. Los costos bajan, el retorno de la inversión (ROI) es favorable, y los ahorros en la factura eléctrica son significativos.</p>
-
+                <div class="image-container">
+                    <img src="https://placehold.co/600x350/d1fae5/065f46?text=Ahorro+Energia+Solar" alt="Ilustración de ahorro de energía solar">
+                </div>
                 <div class="mb-8">
                     <h3 class="text-xl font-semibold text-sky-600 mb-2 text-center">Comparativa Económica (Estimaciones España)</h3>
                     <div class="chart-container mx-auto h-72 md:h-96">
@@ -404,7 +428,9 @@
             <div class="bg-white shadow-xl rounded-lg p-6 mb-8">
                 <h2 class="text-3xl font-bold text-sky-700 mb-4">Tendencias Futuras e Innovaciones</h2>
                 <p class="text-lg mb-4">El sector fotovoltaico está en constante evolución, con avances que prometen sistemas aún más eficientes, accesibles y versátiles.</p>
-
+                <div class="image-container">
+                    <img src="https://placehold.co/600x350/a5b4fc/4338ca?text=Innovacion+Solar" alt="Ilustración de innovación solar">
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="card bg-sky-50 p-5 rounded-lg shadow">
                         <h3 class="text-xl font-semibold text-sky-600 mb-2">🚀 Avances en Eficiencia y Costos</h3>
@@ -458,7 +484,7 @@
     </main>
 
     <footer class="bg-sky-800 text-sky-100 text-center p-6 mt-8">
-        <p>&copy; 2024 Explorador Interactivo de Paneles Fotovoltaicos. Basado en el "Estudio Exhaustivo sobre Paneles Fotovoltaicos".</p>
+        <p>&copy; 2024 Explorador Interactivo de Paneles Fotovoltaicos.</p>
         <p class="text-xs mt-1">Aplicación generada para fines ilustrativos y educativos.</p>
     </footer>
     
@@ -468,6 +494,7 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
+        // Function to set the active content section and navigation link
         function setActiveSection(sectionId) {
             contentSections.forEach(section => {
                 if (section.id === sectionId) {
@@ -489,14 +516,17 @@
                     }
                 }
             });
+            // Scroll to the top of the page when changing sections
             window.scrollTo(0, 0);
         }
         
+        // Add event listeners to navigation links for smooth scrolling and section activation
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const sectionId = e.target.dataset.section;
                 setActiveSection(sectionId);
+                // Close mobile menu after selection
                 if (mobileMenu.classList.contains('block')) {
                     mobileMenu.classList.remove('block');
                     mobileMenu.classList.add('hidden');
@@ -504,41 +534,51 @@
             });
         });
 
+        // Toggle mobile menu visibility
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('block');
         });
         
+        // Function to handle tab switching within sections (e.g., Applications)
         function openAppTab(evt, tabName) {
-            var i, tabcontent, tablinks;
+            let i, tabcontent, tablinks;
+            // Get all tab content elements within the same parent
             tabcontent = evt.currentTarget.closest('.mb-6').querySelectorAll(".app-tab-content");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
+            // Get all tab buttons within the same parent
             tablinks = evt.currentTarget.parentElement.querySelectorAll(".tab-button");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active");
             }
+            // Display the selected tab content and set the button as active
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.classList.add("active");
         }
 
+        // Data for different panel types
         const panelTypesData = [
-            { name: "Monocristalino", material: "Silicio puro", features: "Estructura uniforme, color negro/azul oscuro, bordes redondeados", efficiency: "18-25%", lifespan: "25+", cost: "Alto", applications: "Espacio limitado (residencial/comercial), zonas de radiación variable, proyectos de alto rendimiento", advantages: "Alta eficiencia, mejor rendimiento en poca luz/altas temperaturas, larga vida útil", challenges: "Mayor costo inicial", efficiency_min: 18, efficiency_max: 25, lifespan_val: 25 },
-            { name: "Policristalino", material: "Fragmentos de silicio fundido", features: "Estructura menos uniforme, color azul, patrón irregular", efficiency: "15-20%", lifespan: "~20", cost: "Medio", applications: "Desplazado, pero viable con espacio abundante", advantages: "Menor costo de producción", challenges: "Menor eficiencia, mayor degradación", efficiency_min: 15, efficiency_max: 20, lifespan_val: 20 },
-            { name: "Película Delgada (Amorfo)", material: "Silicio amorfo", features: "Estructura irregular, flexible, ligero, sobre sustratos flexibles", efficiency: "6-13%", lifespan: "10-15", cost: "Bajo", applications: "Aplicaciones específicas (techos curvos, vehículos, fachadas), poca luz/sombra", advantages: "Flexibilidad, ligereza, integración arquitectónica, mejor coeficiente de temperatura", challenges: "Baja eficiencia, requiere más espacio, mayor degradación", efficiency_min: 6, efficiency_max: 13, lifespan_val: 12 },
-            { name: "Perovskita", material: "Perovskita", features: "Propiedades ópticas/electrónicas ideales, eficiente transporte de electrones", efficiency: "Hasta 24% (tándem), 45-50% (multiunión lab)", lifespan: "En desarrollo", cost: "Potencialmente bajo", applications: "No tradicionales (ropa inteligente, vehículos), integración arquitectónica", advantages: "Alta eficiencia, bajo costo de producción, flexibilidad, ligereza, adaptabilidad", challenges: "Durabilidad limitada (fuga de yodo), uso de plomo (se investigan alternativas)", efficiency_min: 20, efficiency_max: 24, lifespan_val: 5 },
-            { name: "Telururo de Cadmio (CdTe)", material: "CdTe", features: "Película delgada, heterounión p-n, sin marco de aluminio, TCO", efficiency: "Hasta 19%", lifespan: "Larga", cost: "Bajo", applications: "Aviones espaciales, granjas solares en climas cálidos, techos de VE", advantages: "Bajo costo de fabricación, mejor coeficiente de temperatura, utiliza luz dispersa", challenges: "Requiere más espacio por kW", efficiency_min: 15, efficiency_max: 19, lifespan_val: 20 },
-            { name: "CIGS", material: "Cobre, Indio, Galio, Selenio", features: "Película delgada", efficiency: "\"Bastante decente\"", lifespan: "N/A", cost: "N/A", applications: "Fachadas, ventanas, aplicaciones espaciales", advantages: "Facilidad de instalación, flexibilidad", challenges: "N/A", efficiency_min: 12, efficiency_max: 16, lifespan_val: 15 },
-            { name: "Bifacial", material: "Silicio (mono/poli)", features: "Captura luz por ambas caras (frontal y trasera), encapsulado vidrio-vidrio", efficiency: "Hasta 30% más que monofaciales", lifespan: "30+", cost: "Ligeramente más alto (disminuyendo)", applications: "Superficies reflectantes (nieve, techos blancos), toldos, pérgolas, autoconsumo industrial", advantages: "Mayor eficiencia, mejor aprovechamiento del espacio, mayor durabilidad, funciona a bajas temperaturas", challenges: "Mayor peso, montaje más complejo (disminuyendo)", efficiency_min: 20, efficiency_max: 26, lifespan_val: 30 }
+            { name: "Monocristalino", material: "Silicio puro", features: "Estructura uniforme, color negro/azul oscuro, bordes redondeados", efficiency: "18-25%", lifespan: "25+", cost: "Alto", applications: "Espacio limitado (residencial/comercial), zonas de radiación variable, proyectos de alto rendimiento", advantages: "Alta eficiencia, mejor rendimiento en poca luz/altas temperaturas, larga vida útil", challenges: "Mayor costo inicial", efficiency_min: 18, efficiency_max: 25, lifespan_val: 25, image: "https://placehold.co/300x200/a7f3d0/065f46?text=Panel+Monocristalino" },
+            { name: "Policristalino", material: "Fragmentos de silicio fundido", features: "Estructura menos uniforme, color azul, patrón irregular", efficiency: "15-20%", lifespan: "~20", cost: "Medio", applications: "Desplazado, pero viable con espacio abundante", advantages: "Menor costo de producción", challenges: "Menor eficiencia, mayor degradación", efficiency_min: 15, efficiency_max: 20, lifespan_val: 20, image: "https://placehold.co/300x200/fef3c7/92400e?text=Panel+Policristalino" },
+            { name: "Película Delgada (Amorfo)", material: "Silicio amorfo", features: "Estructura irregular, flexible, ligero, sobre sustratos flexibles", efficiency: "6-13%", lifespan: "10-15", cost: "Bajo", applications: "Aplicaciones específicas (techos curvos, vehículos, fachadas), poca luz/sombra", advantages: "Flexibilidad, ligereza, integración arquitectónica, mejor coeficiente de temperatura", challenges: "Baja eficiencia, requiere más espacio, mayor degradación", efficiency_min: 6, efficiency_max: 13, lifespan_val: 12, image: "https://placehold.co/300x200/dbeafe/1e40af?text=Panel+Pel%C3%ADcula+Delgada" },
+            { name: "Perovskita", material: "Perovskita", features: "Propiedades ópticas/electrónicas ideales, eficiente transporte de electrones", efficiency: "Hasta 24% (tándem), 45-50% (multiunión lab)", lifespan: "En desarrollo", cost: "Potencialmente bajo", applications: "No tradicionales (ropa inteligente, vehículos), integración arquitectónica", advantages: "Alta eficiencia, bajo costo de producción, flexibilidad, ligereza, adaptabilidad", challenges: "Durabilidad limitada (fuga de yodo), uso de plomo (se investigan alternativas)", efficiency_min: 20, efficiency_max: 24, lifespan_val: 5, image: "https://placehold.co/300x200/bfdbfe/1d4ed8?text=Panel+Perovskita" },
+            { name: "Telururo de Cadmio (CdTe)", material: "CdTe", features: "Película delgada, heterounión p-n, sin marco de aluminio, TCO", efficiency: "Hasta 19%", lifespan: "Larga", cost: "Bajo", applications: "Aviones espaciales, granjas solares en climas cálidos, techos de VE", advantages: "Bajo costo de fabricación, mejor coeficiente de temperatura, utiliza luz dispersa", challenges: "Requiere más espacio por kW", efficiency_min: 15, efficiency_max: 19, lifespan_val: 20, image: "https://placehold.co/300x200/cffafe/0891b2?text=Panel+CdTe" },
+            { name: "CIGS", material: "Cobre, Indio, Galio, Selenio", features: "Película delgada", efficiency: "\"Bastante decente\"", lifespan: "N/A", cost: "N/A", applications: "Fachadas, ventanas, aplicaciones espaciales", advantages: "Facilidad de instalación, flexibilidad", challenges: "N/A", efficiency_min: 12, efficiency_max: 16, lifespan_val: 15, image: "https://placehold.co/300x200/e0e7ff/4f46e5?text=Panel+CIGS" },
+            { name: "Bifacial", material: "Silicio (mono/poli)", features: "Captura luz por ambas caras (frontal y trasera), encapsulado vidrio-vidrio", efficiency: "Hasta 30% más que monofaciales", lifespan: "30+", cost: "Ligeramente más alto (disminuyendo)", applications: "Superficies reflectantes (nieve, techos blancos), toldos, pérgolas, autoconsumo industrial", advantages: "Mayor eficiencia, mejor aprovechamiento del espacio, mayor durabilidad, funciona a bajas temperaturas", challenges: "Mayor peso, montaje más complejo (disminuyendo)", efficiency_min: 20, efficiency_max: 26, lifespan_val: 30, image: "https://placehold.co/300x200/fecaca/dc2626?text=Panel+Bifacial" }
         ];
 
+        // Populate panel types cards with data and images
         function populatePanelTypes() {
             const container = document.getElementById('panelTypesContainer');
             container.innerHTML = '';
             panelTypesData.forEach(panel => {
                 const card = `
                     <div class="card bg-slate-50 p-5 rounded-lg shadow border border-slate-200 hover:shadow-lg cursor-pointer" onclick="openPanelModal('${panel.name}')">
+                        <div class="image-container mb-3">
+                            <img src="${panel.image}" alt="Imagen de ${panel.name}">
+                        </div>
                         <h3 class="text-xl font-semibold text-sky-600 mb-2">${panel.name}</h3>
                         <p class="text-sm text-slate-700 mb-1"><strong>Eficiencia:</strong> ${panel.efficiency}</p>
                         <p class="text-sm text-slate-700 mb-1"><strong>Vida Útil:</strong> ${panel.lifespan} años</p>
@@ -552,6 +592,7 @@
             });
         }
         
+        // Open modal with detailed panel information
         function openPanelModal(panelName) {
             const panel = panelTypesData.find(p => p.name === panelName);
             if (panel) {
@@ -568,10 +609,12 @@
             }
         }
 
+        // Close any given modal
         function closeModal(modalId) {
             document.getElementById(modalId).style.display = 'none';
         }
 
+        // Close modal when clicking outside of it
         window.onclick = function(event) {
             const modal = document.getElementById('panelDetailModal');
             if (event.target == modal) {
@@ -579,6 +622,7 @@
             }
         }
 
+        // Data for large scale solar plants
         const largeScalePlantsData = [
             { name: "Parque Solar Bhadla (India)", capacity: 2245, area: "N/A", impact: "Redujo costo electricidad solar India." },
             { name: "Parque Solar Desierto de Tengger (China)", capacity: 1510, area: "43 km²", impact: "Alimenta ~600.000 hogares." },
@@ -589,6 +633,7 @@
             { name: "Parque Ultra Mega Solar Kurnool (India)", capacity: 1000, area: "N/A", impact: "Alimenta casi toda el área en horas pico." }
         ];
 
+        // Populate large scale plants list
         function populateLargeScalePlants() {
             const container = document.getElementById('largeScalePlantsList');
             container.innerHTML = '';
@@ -603,7 +648,8 @@
                 container.innerHTML += card;
             });
         }
-
+        
+        // Function to call Gemini API for AI Advisor
         async function askSolarExpert() {
             const questionInput = document.getElementById('solarQuestionInput');
             const responseArea = document.getElementById('solarResponseArea');
@@ -620,9 +666,12 @@
 
             try {
                 let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: `Actúa como un experto en energía solar. Responde a la siguiente pregunta de forma concisa y clara en español: ${userQuestion}` }] });
+                // Provide a system instruction for the AI's role
+                chatHistory.push({ role: "user", parts: [{ text: `Actúa como un experto en energía solar fotovoltaica. Responde a la siguiente pregunta de forma concisa, clara y útil en español. Limita tu respuesta a 150 palabras.` }] });
+                chatHistory.push({ role: "user", parts: [{ text: userQuestion }] });
+
                 const payload = { contents: chatHistory };
-                const apiKey = ""; 
+                const apiKey = ""; // Canvas will automatically provide the API key at runtime
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
@@ -631,7 +680,8 @@
                     body: JSON.stringify(payload)
                 });
 
-                const result = await response.json();
+                const result = await response.json(); // Await the JSON parsing
+
                 if (result.candidates && result.candidates.length > 0 &&
                     result.candidates[0].content && result.candidates[0].content.parts &&
                     result.candidates[0].content.parts.length > 0) {
@@ -639,6 +689,7 @@
                     responseArea.innerHTML = `<p>${text}</p>`;
                 } else {
                     responseArea.innerHTML = '<p class="text-red-500">Lo siento, no pude obtener una respuesta. Intenta reformular tu pregunta.</p>';
+                    console.error('Unexpected API response structure:', result);
                 }
             } catch (error) {
                 console.error('Error al llamar a la API de Gemini:', error);
@@ -648,13 +699,16 @@
             }
         }
         
+        // Initialize the page and charts when the DOM is fully loaded
         document.addEventListener('DOMContentLoaded', () => {
-            setActiveSection('inicio');
-            populatePanelTypes();
-            populateLargeScalePlants();
+            setActiveSection('inicio'); // Set initial active section
+            populatePanelTypes(); // Populate panel types cards
+            populateLargeScalePlants(); // Populate large scale plants list
 
+            // Add event listener for the AI Advisor button
             document.getElementById('askSolarExpertBtn').addEventListener('click', askSolarExpert);
 
+            // Chart.js for Panel Efficiency Comparison
             const panelEfficiencyCtx = document.getElementById('panelEfficiencyChart').getContext('2d');
             new Chart(panelEfficiencyCtx, {
                 type: 'bar',
@@ -682,6 +736,7 @@
                 }
             });
 
+            // Chart.js for Temperature Impact on Efficiency
             const temperatureEfficiencyCtx = document.getElementById('temperatureEfficiencyChart').getContext('2d');
             new Chart(temperatureEfficiencyCtx, {
                 type: 'line',
@@ -704,11 +759,12 @@
                 }
             });
             
+            // Chart.js for Large Scale Plants Capacity
             const largeScalePlantsCtx = document.getElementById('largeScalePlantsChart').getContext('2d');
             new Chart(largeScalePlantsCtx, {
                 type: 'bar',
                 data: {
-                    labels: largeScalePlantsData.map(p => p.name.split('(')[0].trim()), // Shorter names
+                    labels: largeScalePlantsData.map(p => p.name.split('(')[0].trim()), // Shorter names for labels
                     datasets: [{
                         label: 'Capacidad Instalada (MW)',
                         data: largeScalePlantsData.map(p => p.capacity),
@@ -720,12 +776,13 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    indexAxis: 'y',
+                    indexAxis: 'y', // Horizontal bar chart
                     scales: { x: { beginAtZero: true, title: { display: true, text: 'Capacidad (MW)' } } },
                     plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } }
                 }
             });
 
+            // Chart.js for Carbon Footprint Comparison
             const carbonFootprintCtx = document.getElementById('carbonFootprintChart').getContext('2d');
             new Chart(carbonFootprintCtx, {
                 type: 'bar',
@@ -733,7 +790,7 @@
                     labels: ['Carbón', 'Gas Natural', 'Solar Fotovoltaica', 'Nuclear', 'Eólica'],
                     datasets: [{
                         label: 'g CO2eq / kWh',
-                        data: [820, 490, 45, 12, 11], // Valores aproximados
+                        data: [820, 490, 45, 12, 11], // Approximate values
                         backgroundColor: [
                             'rgba(107, 114, 128, 0.7)', // gray-500
                             'rgba(156, 163, 175, 0.7)', // gray-400
@@ -759,12 +816,14 @@
                 }
             });
 
+            // Data for Economic Comparison Chart
             const economicData = {
                 labels: ['Residencial (Red)', 'Residencial (Aislado)', 'PYME', 'Gran Empresa'],
-                costo: [5100, 9600, 10000, 50000], // Estimaciones base
+                costo: [5100, 9600, 10000, 50000], // Base estimations
                 roi: [20, 14, 20, 20], // %
-                amortizacion: [5, 7, 4, 4] // años
+                amortizacion: [5, 7, 4, 4] // years
             };
+            // Chart.js for Economic Comparison
             const economicComparisonCtx = document.getElementById('economicComparisonChart').getContext('2d');
             new Chart(economicComparisonCtx, {
                 type: 'bar',
